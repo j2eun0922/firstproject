@@ -12,10 +12,13 @@
     {{#article}}
     <tr>
         <th scope="row">{{id}}</th>
-        <td colspan="2">{{title}}</td>
+        <td>{{title}}</td>
         <td>{{content}}</td>
     </tr>
     {{/article}}
     </tbody>
 </table>
+<a href="/articles">List</a>
+<a href="/articles/{{article.id}}/edit" class="btn btn-primary">Edit</a>
+<a href="/articles/{{article.id}}/delete" class="btn btn-danger">Delete</a>
 {{>layouts/footer}}
