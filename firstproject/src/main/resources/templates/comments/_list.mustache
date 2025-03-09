@@ -1,0 +1,8 @@
+<div id = "comments-list">          <!-- 댓글 목록 영역 설정 -->
+    {{#commentDtos}}             <!-- 댓글 목록 순회 -->
+        <div class="card m-2" id = "comments-{{id}}">         <!-- 댓글 카드 만들고 id 부여-->
+            <div class="card-header">{{nickname}}</div>         <!-- 헤더 영역 설정 (닉네임) -->
+            <div class="card-body">{{body}}</div>       <!-- 본문 영역 설정(내용) -->
+        </div>
+    {{/commentDtos}}
+</div>
